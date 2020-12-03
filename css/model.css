@@ -1,0 +1,42 @@
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #eee;
+}
+
+.dropdown-menu .dropdown-item:focus{
+    background-color: #111;
+}
+
+.dropdown-menu .dropdown-item .activo{
+    background-color: #122;
+}
+
+.footer{
+    text-align: center;
+    background-color: #111;
+    color: #FFF;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: right;
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer a:hover{
+    color: #CCC;
+}
+
+.footer-item{
+    display: inline;
+    flex: auto;
+}

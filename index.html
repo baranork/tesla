@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tesla</title>
+    <link rel="icon" href="img/icon.png">
+    <script src="script.js"></script>
+</head>
+
+<body onLoad="fadeIn()" id="page" class="hide">
+    <div class="header">
+        <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="img/icon.png" width="30" height="30" alt="logo">
+                Tesla
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                            Models
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Roadster</a>
+                            <a class="dropdown-item" href="pages/models.html">Model S</a>
+                            <a class="dropdown-item" href="#">Model 3</a>
+                            <a class="dropdown-item" href="#">Model X</a>
+                            <a class="dropdown-item" href="#">Model Y</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">See More...</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">About</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="carouselTesla" class="carousel slide" data-ride="carousel" data-pause="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselTesla" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselTesla" data-slide-to="1"></li>
+                <li data-target="#carouselTesla" data-slide-to="2"></li>
+                <li data-target="#carouselTesla" data-slide-to="3"></li>
+                <li data-target="#carouselTesla" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img src="img/roadster.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Roadster</h5>
+                        <p>The quickest car in the world, with record-setting acceleration, range and performance.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="pages/models.html"><img src="img/s.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Model S</h5>
+                        <p>Model S is built for speed and endurance, with ludicrous acceleration, unparalleled
+                            performance and a sleek aesthetic.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/model3.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Model 3</h5>
+                        <p>Model 3 is designed for electric-powered performance, with dual motor AWD, quick
+                            acceleration, long range and fast
+                            charging.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/x.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Model X</h5>
+                        <p>Model X can get you anywhere you want to go—with industry-leading range and convenient
+                            charging options, all over the
+                            world.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/y.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Model Y</h5>
+                        <p>Model Y is a fully electric, mid-size SUV, with seating for up to seven, dual motor AWD and
+                            unparalleled protection.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselTesla" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTesla" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="news-container">
+        <h3 class="centered-text">Want to know more about the future of Tesla?</h3>
+        <button type="button" class="btn btn-outline-light centered-button btn-lg" onclick="al()">Subscribe to our Newsletter</button>
+        <img src="img/upcoming.jpg" alt="" class="d-block w-100" style="max-height: 100vh;">
+    </div>
+    <div class="footer">
+        <p class="footer-item">Copyright 2020 &copy; Tesla, Inc.</p>
+        <a href="#" class="footer-item">Contact</a>
+        <a href="#" class="footer-item">Careers</a>
+        <a href="#" class="footer-item">Privacy & Legal</a>
+        <a href="#" class="footer-item">Support</a>
+        <a href="#" class="footer-item">Jobs</a>
+    </div>
+</body>
+
+</html>
